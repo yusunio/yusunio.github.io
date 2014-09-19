@@ -231,14 +231,14 @@ jQuery(document).ready(function(){
 	// Needed variables
 	var $map 				= $('#map'),
 		$tabContactClass 	= ('tab-contact'),
-		$lat 				= '36.143186',
-		$lon 				= '-86.792031';
+		$lat 				= '34.058351',
+		$lon 				= '-117.823688';
 
 	$map.gmap().bind('init', function(ev, map) {
 		$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
 			$map.gmap('openInfoWindow', {'content': 'Hello World!'}, this);
 		});
-		$map.gmap('option', 'zoom', 9);
+		$map.gmap('option', 'zoom', 10);
 	});
 
 	// Refresh Map
